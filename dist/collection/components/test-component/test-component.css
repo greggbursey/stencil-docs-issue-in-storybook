@@ -1,0 +1,13 @@
+.label,
+.message {
+  padding: 1rem;
+  color: #fff;
+}
+
+.label {
+  background-color: blue;
+}
+
+.message {
+  background-color: red;
+}

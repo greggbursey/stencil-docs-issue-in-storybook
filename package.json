@@ -1,0 +1,52 @@
+{
+    "name": "stencil-docs-not-working",
+    "version": "0.0.1",
+    "description": "Why are stencil docs not working.",
+    "main": "dist/index.cjs.js",
+    "module": "dist/index.js",
+    "es2015": "dist/esm/index.mjs",
+    "es2017": "dist/esm/index.mjs",
+    "types": "dist/types/index.d.ts",
+    "collection": "dist/collection/collection-manifest.json",
+    "collection:main": "dist/collection/index.js",
+    "unpkg": "dist/component-library/component-library.esm.js",
+    "files": [
+        "dist/",
+        "loader/"
+    ],
+    "scripts": {
+        "build": "rimraf ./dist && stencil build --docs-readme",
+        "start": "stencil build --dev --watch --serve",
+        "test": "stencil test --spec --e2e",
+        "test.watch": "stencil test --spec --e2e --watchAll",
+        "generate": "stencil generate",
+        "storybook": "npm run build && storybook dev -p 6006",
+        "build-storybook": "storybook build"
+    },
+    "dependencies": {
+        "@stencil/core": "^4.7.1",
+        "ag-grid-community": "^31.0.1",
+        "flatpickr": "^4.6.13"
+    },
+    "devDependencies": {
+        "@stencil/react-output-target": "^0.5.3",
+        "@stencil/sass": "^3.0.7",
+        "@storybook/addon-essentials": "^7.6.7",
+        "@storybook/addon-links": "^7.6.7",
+        "@storybook/addon-mdx-gfm": "^7.6.7",
+        "@storybook/blocks": "^7.6.7",
+        "@storybook/web-components": "^7.6.7",
+        "@storybook/web-components-vite": "^7.6.7",
+        "@types/jest": "^29.5.8",
+        "@types/node": "^20.9.0",
+        "jest": "^29.7.0",
+        "jest-cli": "^29.7.0",
+        "lit": "^3.0.2",
+        "puppeteer": "^21.5.1",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "rimraf": "^5.0.5",
+        "storybook": "^7.6.7"
+    },
+    "license": "MIT"
+}

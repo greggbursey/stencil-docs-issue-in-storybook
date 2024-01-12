@@ -1,0 +1,2 @@
+import{r as s,h as e,H as o}from"./p-b794fe06.js";const r=".label,.message{padding:1rem;color:#fff}.label{background-color:blue}.message{background-color:red}";const a=class{constructor(e){s(this,e);this.label=undefined;this.message=undefined}render(){return e(o,null,e("div",{class:"label"},this.label),e("div",{class:"message"},this.message))}};a.style=r;export{a as test_component};
+//# sourceMappingURL=p-fb6e7a15.entry.js.map

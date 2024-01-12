@@ -1,0 +1,22 @@
+{
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "test-component",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "label",
+          "description": "This is label documentation."
+        },
+        {
+          "name": "message",
+          "description": "This is a message documentation."
+        }
+      ]
+    }
+  ]
+}
