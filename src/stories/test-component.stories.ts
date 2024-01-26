@@ -13,14 +13,16 @@ export const Default = {
     args: {
         label: 'Label Here',
         message: 'Message will show here',
+        otherThing: 'Two',
     } satisfies TestComponentProps,
 };
 
-function getElement(args) {
+function getElement(args: TestComponentProps) {
     return html`
         <test-component
             label="${args.label}"
             message="${args.message}"
+            other-thing="${args.otherThing}"
         >
         </test-component>
     `;

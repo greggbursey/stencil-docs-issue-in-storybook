@@ -1,5 +1,6 @@
 .label,
-.message {
+.message,
+.other {
     padding: 1rem;
     color: #fff;
 }
@@ -10,4 +11,8 @@
 
 .message {
     background-color: red;
+}
+
+.other {
+    background-color: green;
 }
